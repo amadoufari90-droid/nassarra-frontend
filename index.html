@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Préqualification Client</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <h1>Préqualification Client</h1>
+  <form id="leadForm">
+    <input name="nom" placeholder="Nom complet" required>
+    <input name="email" type="email" placeholder="Votre email" required>
+    <select name="projet" required>
+      <option value="">Type de projet</option>
+      <option>Achat</option><option>Location</option><option>Investissement locatif</option>
+    </select>
+    <select name="budget" required>
+      <option value="">Budget</option>
+      <option>Moins de 50M</option><option>50M - 100M</option><option>Plus de 100M</option>
+    </select>
+    <select name="delai" required>
+      <option value="">Délai</option>
+      <option>Immédiat</option><option>3 mois</option><option>6 mois</option><option>Plus tard</option>
+    </select>
+    <select name="situation" required>
+      <option value="">Situation</option>
+      <option>Résident à Lomé</option><option>Expatrié</option><option>Diaspora</option><option>Autre</option>
+    </select>
+    <select name="financement" required>
+      <option value="">Financement</option>
+      <option>Fonds propres</option><option>Crédit bancaire</option><option>En cours de recherche</option>
+    </select>
+    <textarea name="description" placeholder="Description du bien recherché"></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+  <p id="msg"></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
