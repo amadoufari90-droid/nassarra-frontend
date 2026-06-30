@@ -1,4 +1,4 @@
-const API_URL = 'https://nassarra-backend.onrender.com';
+const API_URL = 'https://nassarra-backend.onrender.com/submit';
 const projetSelect = document.getElementById('projet');
 const projetAutreInput = document.getElementById('projet_autre');
 const projetAutreHelp = document.getElementById('projet_autre_help');
